@@ -1,0 +1,16 @@
+{
+  "name": "shutter-online",
+  "version": "1.0.0",
+  "description": "�������\r 2D ��� �����\r �������\r � ������� � ������� ���\r � ���������� �����������",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.fast-system.ru:ipoteka/admin_panel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

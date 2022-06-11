@@ -5,18 +5,10 @@ namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 
-class ShuterController extends Controller
+class ShutterController extends Controller
 {
-
-    /**
-     * Мониторинг
-     */
-    public function actionNewGame()
+    public function actionNewGame(): string
     {
-        $params = Yii::$app->params;
-        var_dump($params);
-        /*        return $this->render('index', [
-                    'params' => $params
-                ]);*/
+        return $this->render('game', []);
     }
 }

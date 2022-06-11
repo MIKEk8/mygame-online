@@ -40,7 +40,7 @@ services:
       - internal_ipoteka_back
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     command: --max_allowed_packet=100M --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     restart: always
     volumes:
@@ -48,9 +48,9 @@ services:
       - internal_ipoteka_mysql_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ipoteka
-      MYSQL_USER: ipoteka
-      MYSQL_PASSWORD: ipoteka
+      MYSQL_DATABASE: shut
+      MYSQL_USER: shut
+      MYSQL_PASSWORD: shut
     ports:
       - '3306:3306'
     networks:

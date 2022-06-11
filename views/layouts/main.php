@@ -3,7 +3,6 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -27,6 +26,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+    <div class="header">
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
@@ -57,13 +57,14 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
-
+    </div>
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
-        <?= Alert::widget() ?>
+        <div class="content">
         <?= $content ?>
+        </div>
     </div>
 </div>
 
